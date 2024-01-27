@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="Calculator.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>calc</p>
+        <div class="theme">
+          <p>Theme</p>
+          <div class="inputs">
+            <input id="theme1" type="radio" name="theme" value="0" checked onchange="changeStylesheet2()" />
+            <label for="theme1"></label>
+            
+        
+            <input id="theme2" type="radio" value="1" name="theme" onchange="changeStylesheet()" />
+            <label for="theme2"></label>
+            
+            <input id="theme3" type="radio" value="2" name="theme" />
+            <label for="theme3"></label>
+            
+          </div>
+        </div>
+      </div>
+      <div class="display">
+        <div class="previous"></div>
+        <div class="current"></div>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="buttonsContainer">
+        
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
 
+        <button class="operand" id="del">DEL</button>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+
+        <button class="operand" id="plus">+</button>
+
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+
+        <button class="operand" id="moins">-</button>
+
+        <button class="btn">.</button>
+        <button class="btn">0</button>
+
+        <button class="operand" id="division">/</button>
+        <button class="operand" id="multiplication">x</button>
+
+        <button id="reset">Reset</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+    <script src="/Calculator.js"></script>
+  </body>
 </html>
